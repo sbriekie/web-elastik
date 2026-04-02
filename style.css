@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    
+}
+
+header {
+    background: url(pst.jpg) center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+header ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .2);
+}
+header h1{
+    font-size: 4.5rem;
+    margin-bottom: 2.5rem;
+}
+
+nav{
+    background-color: aqua;
+}
+
+.container-fluid{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.navbar-brand{
+    text-decoration: none;
+    color: black ;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.bar{
+    display: none;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.navbar-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-nav li{
+    margin: 0 1rem;
+}
+
+.navbar-nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease ;
+}
+
+.navbar-nav li a:hover{
+    color: #ffcc00;
+}
+
+main{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.layanan{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.layanan h2{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.item-layanan {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    margin: 0.5rem;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease ;
+}
+
+.item-layanan:hover {
+    transform: scale(1.1);
+}
+.item-layanan img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item-layanan h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.item-layanan p{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.item-layanan button{
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.item-layanan button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.buku {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.buku h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+.item-buku {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    margin: 0.5rem;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease ;
+}
+
+.item-buku:hover {
+    transform: scale(1.1);
+}
+
+.item-buku img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+
+.item-buku h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+
+}
+
+.item-buku p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.item-buku button{
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.item-buku button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+.koran_digital{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.koran_digital h2{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.item-koran {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    margin: 0.5rem;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease ;
+}
+
+.item-koran:hover {
+    transform: scale(1.1);
+}
+.item-koran img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item-koran h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.item-koran p{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.item-koran button{
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.item-layanan button:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-nav li a:not(:first-child) {display: none;}
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar-nav{
+        display: none;
+    }
+
+    .navbar-nav.aktif{
+        display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: aquamarine;
+		padding: 10px 20px;
+		right: 0;  
+		left: 0;
+    }
+
+    .navbar-nav.aktif li a{
+        padding: 10px;
+		display: inline-block !important;
+    }
+
+    .bar{
+        display: block;
+    }
+  }
+    
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+.footer p {
+    margin: 0;
+    color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .koran_digital{
+        display: none;
+    }
+}
