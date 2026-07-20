@@ -283,15 +283,13 @@ main{
 }
 
 .item-skd {
-    background-color: white;
+   background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-    margin: 0.5rem;
-    max-width: 300px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 1rem;
-    border-radius: 5px;
+    margin: 20px;
+    max-width: 550px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 10px;
     flex: 1;
     text-align: center;
     transition: transform 0.3s ease ;
