@@ -291,6 +291,12 @@ main{
     text-align: center;
 }
 
+.hasil_skd h2{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
 
 .item-skd {
    background-color: white;
